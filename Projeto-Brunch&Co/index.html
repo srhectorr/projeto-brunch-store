@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brunch&Co</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<body>
+    
+<header>
+    <div class="container">
+        <div class="logo"><a href="index.html">Brunch & Co.</a></div>
+        <nav>
+            <ul class="leftside">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="Cardapio.html">Cardápio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="rightside"><a href="Cardapio.html#cardapio" class="button">Fazer pedido</a></div>
+        </nav>
+        <div class="menu">
+            <div class="menu-icon">
+                <div></div>
+                <div></div> 
+                <div></div>
+            </div>
+ 
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <div class="leftside">
+            <h1>Brunch dos sonhos, direto para sua mesa.</h1>
+            <p>Na Brunch & Co, é só o começo. Criamos um espaço pensado pra quem valoriza boas conversas, comida leve,
+            tempo de qualidade e uma rotina com menos pressa.</p>
+            <a href="#conteudo-modal" onclick="abrirModal('modal-saber-mais')" class="button">Saber mais</a>
+        </div>
+        <div class="rightside">
+            <img src="assets/imagens/brun.avif" alt="brunch">
+        </div>
+    </div>
+
+</section>
+
+<section class="emoji">
+    <div class="container">
+        <nav>
+            <ul class="leftside">
+                <li><i class="fas fa-utensils"></i> Refeição no local</li>
+                <li><i class="fa-solid fa-seedling"></i> Opções veganas</li>
+                <li><i class="fa-solid fa-mug-saucer"></i> Bebidas e drinks</li>
+                <li><i class="fa-solid fa-paw"></i> Pet <br>friendly</li>
+                <li><i class="fa-solid fa-heart"></i> Feito com amor</li>
+            </ul>
+        </nav>
+
+    </div>
+</section>
+
+<section class="slider">
+    <h1>Escolhas Irresistíveis</h1>
+    <div class="container">
+        <div class="slider-area">
+            <input type="radio" name="btn-radio" id="radio1" checked>
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slider-content">
+                <div class="slide-box">
+                    <img src="assets/imagens/slideshow1.jpg" alt="Imagem 1">
+                </div>
+                <div class="slide-box">
+                    <img src="assets/imagens/slideshow2.jpg" alt="Imagem 2">
+                </div>
+                <div class="slide-box">
+                    <img src="assets/imagens/slideshow3.jpg" alt="Imagem 3">
+                </div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="Cardapio.html" class="cardapio button">Consultar Cardápio</a>
+    </div>
+</section>
+
+
+<footer id="contato">
+  <section class="footer-info">
+    <div class="container">
+      <div class="contato">
+        <h2>Fale conosco</h2>
+        <p>Aqui é fácil nos encontrar. Clique nos ícones abaixo e entre em contato!</p>           
+        <nav>
+          <ul class="icones">
+            <li><button onclick="abrirModal('modal-endereco')"><i class="fa-solid fa-map-location-dot"></i> Ver endereço</li>
+            <li><button onclick="abrirModal('modal-contato')"><i class="fa-regular fa-envelope"></i> Contatos</li>
+            <li><button onclick="abrirModal('modal-redes')"><i class="fa-regular fa-paper-plane"></i> Nossas redes</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <div class="copyright">
+    <p>&copy; 2025 Brunch & Co. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+<div style="height: 250px;"></div>
+
+
+<div class="janela-modal" id="modal-saber-mais">
+    <div class="conteudo-modal">
+        <button class="fechar">X</button>
+        <h1>Aqui a comida é a estrela do espetáculo.</h1>
+        <p>Pratos com ingredientes frescos e combinações de sabor, criatividade e carinho em cada detalhe.<br> <br>
+        Tudo isso em um ambiente leve, confortável e convidativo... Perfeito para aproveitar bons momentos, seja sozinho, com amigos ou com quem você ama.
+        Aqui, comer bem é só o começo.</p>
+    </div>
+</div>
+
+<div class="janela-modal" id="modal-endereco">
+  <div class="conteudo-modal">
+    <button class="fechar">X</button>
+    <h1>Nosso endereço</h1>
+    <p>Rua das Delícias, 123 - Bairro Saboroso<br>São Paulo - SP</p>
+  </div>
+</div>
+
+<div class="janela-modal" id="modal-contato">
+  <div class="conteudo-modal">
+    <button class="fechar">X</button>
+    <h1>Entre em contato</h1>
+    <p>Email: atendimento@bruncheco.com<br>Telefone: (11) 91234-5678</p>
+  </div>
+</div>
+
+<div class="janela-modal" id="modal-redes">
+  <div class="conteudo-modal">
+    <button class="fechar">X</button>
+    <h1>Nossas redes</h1>
+    <p>Instagram: @bruncheco<br>Facebook: /bruncheco</p>
+  </div>
+</div>
+
+
+<script src="assets/js/script.js"></script>
+
+
+
+</body>
+</html>
+
+
